@@ -65,9 +65,9 @@
 
 
 # 5. read tree
-  phy = read.tree("trees/hooks.tre") # new3 works 
+  phy = read.tree("trees/hooks.tre") 
   
-  phy=drop.tip(phy,c(16)) #13:30,32:42,44:47
+  phy=drop.tip(phy,c(16)) # remove outgroup
   phy = root(phy, "Elthusa_raynaudii")
   
   phy$tip.label[5]<- "Nerocila_depressa"
